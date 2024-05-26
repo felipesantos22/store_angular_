@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Centraliza os cartões horizontalmente */
+}
+
+.example-card {
+  width: 300px;             /* Define a largura fixa para cada cartão */
+  margin: 10px;             /* Espaçamento entre os cartões */
+}
+
+.example-header-image {
+  background-image: url("https://cdn.pixabay.com/photo/2022/03/04/15/35/cliffs-7047561_960_720.jpg");
+  background-size: cover;
+}
+
+.image {
+  width: 160px;              /* Garante que a imagem ocupe toda a largura do contêiner */
+  height: 200px;            /* Define uma altura fixa para todas as imagens */
+  display: block;           /* Remove espaçamento indesejado ao redor da imagem */
+  margin: 0 auto;           /* Centraliza a imagem horizontalmente */
+}
+
+.description, .title {
+  width: 200px; /* Defina a largura desejada */
+  white-space: nowrap; /* Impede a quebra de linha */
+  overflow: hidden; /* Esconde o texto que ultrapassa a largura */
+  text-overflow: ellipsis; /* Adiciona reticências (...) ao final do texto truncado */
+}
